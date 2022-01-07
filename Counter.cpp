@@ -16,6 +16,7 @@ Counter::Counter(unsigned int value_min, unsigned int value_max, unsigned int st
     this->cur_count = cur_count;
 }
 
+
 void Counter::Set_min(unsigned int value_min)
 {
     this->value_min = value_min;
@@ -39,6 +40,18 @@ void Counter::Set_step(unsigned int step)
 void Counter::step_count()
 {
     cur_count += step;
+    if (cur_count > value_max) cur_count = 0;
+}
+
+void Counter::step_1()
+{
+    cur_count += 1;
+    if (cur_count > value_max) cur_count = 0;
+}
+
+void Counter::zeroung()
+{
+    cur_count = 0;
 }
 
 void Counter::Print()

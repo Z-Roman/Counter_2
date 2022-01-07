@@ -25,6 +25,10 @@ public:
 
 	void step_count();
 
+	void step_1();
+
+	void zeroung();
+
 	void Print();
 
 };
