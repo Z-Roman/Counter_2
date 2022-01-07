@@ -1,5 +1,6 @@
 #pragma once
 #include<iostream>
+#include<Windows.h>
 using namespace std;
 
 class Counter
@@ -30,6 +31,8 @@ public:
 	void zeroung();
 
 	void Print();
+
+	void Play();
 
 };
 

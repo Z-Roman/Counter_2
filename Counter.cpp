@@ -60,6 +60,17 @@ void Counter::Print()
         "\nstep = " << step << "\ncur_count = " << cur_count << "\n\n";
 }
 
+void Counter::Play()
+{
+    while (true)
+    {
+         Print();
+         step_count();
+        // Sleep(10);
+         system("cls");
+    }
+}
+
 
 
 
