@@ -1,5 +1,6 @@
 #pragma once
 #include<iostream>
+using namespace std;
 
 class Counter
 {
@@ -14,13 +15,17 @@ public:
 
 	Counter(unsigned int value_min, unsigned int value_max, unsigned int step, unsigned int cur_count);
 
-	int Set_min(unsigned int value_min);
+	void Set_min(unsigned int value_min);
 
-	int Set_max(unsigned int value_max);
+	void Set_max(unsigned int value_max);
 
-	int Set_cur_count(unsigned int cur_count);
+	void Set_cur_count(unsigned int cur_count);
 
-	int Set_step(unsigned int step);
+	void Set_step(unsigned int step);
+
+	void step_count();
+
+	void Print();
 
 };
 

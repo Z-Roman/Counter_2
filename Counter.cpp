@@ -16,24 +16,35 @@ Counter::Counter(unsigned int value_min, unsigned int value_max, unsigned int st
     this->cur_count = cur_count;
 }
 
-int Counter::Set_min(unsigned int value_min)
+void Counter::Set_min(unsigned int value_min)
 {
     this->value_min = value_min;
 }
 
-int Counter::Set_max(unsigned int value_max)
+void Counter::Set_max(unsigned int value_max)
 {
     this->value_max = value_max;
 }
 
-int Counter::Set_cur_count(unsigned int cur_count)
+void Counter::Set_cur_count(unsigned int cur_count)
 {
     this->cur_count = cur_count;
 }
 
-int Counter::Set_step(unsigned int step)
+void Counter::Set_step(unsigned int step)
 {
     this->step = step;
+}
+
+void Counter::step_count()
+{
+    cur_count += step;
+}
+
+void Counter::Print()
+{
+    cout << "value_min = " << value_min << "\nvalue_max = " << value_max <<
+        "\nstep = " << step << "\ncur_count = " << cur_count << "\n\n";
 }
 
 
