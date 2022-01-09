@@ -16,19 +16,19 @@ public:
 
 	Counter(unsigned int value_min, unsigned int value_max, unsigned int step, unsigned int cur_count);
 
-	void Set_min(unsigned int value_min);
+	void SetMin(unsigned int value_min);
 
-	void Set_max(unsigned int value_max);
+	void SetMax(unsigned int value_max);
 
-	void Set_cur_count(unsigned int cur_count);
+	void SetCurrent(unsigned int cur_count);
 
-	void Set_step(unsigned int step);
+	void SetStep(unsigned int step);
 
-	void step_count();
+	void StepCount();
 
-	void step_1();
+	void StepOne();
 
-	void zeroung();
+	void Zeroung();
 
 	void Print();
 

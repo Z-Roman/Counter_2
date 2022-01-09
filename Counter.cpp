@@ -17,39 +17,39 @@ Counter::Counter(unsigned int value_min, unsigned int value_max, unsigned int st
 }
 
 
-void Counter::Set_min(unsigned int value_min)
+void Counter::SetMin(unsigned int value_min)
 {
     this->value_min = value_min;
 }
 
-void Counter::Set_max(unsigned int value_max)
+void Counter::SetMax(unsigned int value_max)
 {
     this->value_max = value_max;
 }
 
-void Counter::Set_cur_count(unsigned int cur_count)
+void Counter::SetCurrent(unsigned int cur_count)
 {
     this->cur_count = cur_count;
 }
 
-void Counter::Set_step(unsigned int step)
+void Counter::SetStep(unsigned int step)
 {
     this->step = step;
 }
 
-void Counter::step_count()
+void Counter::StepCount()
 {
     cur_count += step;
     if (cur_count > value_max) cur_count = 0;
 }
 
-void Counter::step_1()
+void Counter::StepOne()
 {
     cur_count += 1;
     if (cur_count > value_max) cur_count = 0;
 }
 
-void Counter::zeroung()
+void Counter::Zeroung()
 {
     cur_count = 0;
 }
@@ -65,7 +65,7 @@ void Counter::Play()
     while (true)
     {
          Print();
-         step_count();
+         StepCount();
         // Sleep(10);
          system("cls");
     }
